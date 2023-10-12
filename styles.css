@@ -1,0 +1,28 @@
+@font-face{
+    font-family: myFont;
+    src:url('PPRadioGrotesk-Medium.ttf');
+}
+
+
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+canvas {
+    background: rgb(255,10,84);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: myFont;
+}
+
+input {
+    position: absolute;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin:10px;
+    z-index:100;
+}
