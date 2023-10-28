@@ -65,7 +65,7 @@ window.addEventListener('load',function(){
             });
             //particle text 
             this.particles= [];
-            this.gap = 3; // size of particles
+            this.gap = 6; // size of particles
             this.mouse = {
                 radius: 50000, // IMPORTANT TO KEEP IT LARGE
                 x: 0 , 
@@ -81,11 +81,11 @@ window.addEventListener('load',function(){
         wrapText(text){
             // canvas settings
             const gradient = this.context.createLinearGradient(0,0,this.canvasWidth, this.canvasHeight);//(x1,y1,x2,y2)
-            gradient.addColorStop(0.3, 'white', );
-            gradient.addColorStop(0.5, 'white', );
-            gradient.addColorStop(0.7, 'white', );
+            gradient.addColorStop(0.3, 'black', );
+            gradient.addColorStop(0.5, 'black', );
+            gradient.addColorStop(0.7, 'black', );
             this.context.fillStyle = gradient;
-            this.context.letterSpacing = '-5px';
+            this.context.letterSpacing = '-15px';
             this.context.textAlign = 'center';
             this.context.textBaseline = 'middle';
             this.context.lineWidth = 5; // delete
